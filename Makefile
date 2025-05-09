@@ -12,3 +12,9 @@ collectstatic:
 
 migrate:
 	python3 manage.py migrate
+
+shell:
+	python3 manage.py shell
+
+test:
+	python3 manage.py test

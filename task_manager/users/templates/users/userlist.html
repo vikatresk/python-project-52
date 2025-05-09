@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% load i18n %}
+
+{% block content %}
+<h1 class="my-4">{% translate 'Users' %}</h1>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>{% translate 'ID' %}</th>
+        <th>{% translate 'Username' %}</th>
+        <th>{% translate 'Full name' %}</th>
+        <th>{% translate 'Date of creation' %}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user in user_list %}
+        <tr>
+          <td>{{ user.pk }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.first_name }} {{ user.last_name }}</td>
+          <td>{{ user.date_joined }}</td>
+          <td>
+            <a href="{% url 'users:update_user' pk=user.pk %}">{% translate 'Edit' %}</a>
+            <br>
+            <a href="{% url 'users:delete_user' pk=user.pk %}">{% translate 'Delete' %}</a>
+          </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+  {% endblock %}
