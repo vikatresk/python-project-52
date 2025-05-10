@@ -73,8 +73,6 @@ msgid "Delete"
 msgstr "Удалить"
 
 #: task_manager/labels/views.py:30
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Label successfully created"
 msgstr "Метка успешно создана!"
 
@@ -84,8 +82,6 @@ msgid "Create"
 msgstr "Создать"
 
 #: task_manager/labels/views.py:45
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Label successfully updated"
 msgstr "Метка успешно создан!"
 
@@ -99,20 +95,14 @@ msgid "Update"
 msgstr "Обновить"
 
 #: task_manager/labels/views.py:58
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Label successfully deleted"
 msgstr "Метка успешно создана!"
 
 #: task_manager/labels/views.py:60
-#, fuzzy
-#| msgid "Delete user"
 msgid "Delete label"
 msgstr "Удалить метку"
 
 #: task_manager/labels/views.py:62
-#, fuzzy
-#| msgid "Cannot delete user because it is in use"
 msgid "Cant delete label because it is in use"
 msgstr "Нельзя удалить метку, так как она используется"
 
@@ -127,46 +117,34 @@ msgid "Create status"
 msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:30
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Status successfully created"
-msgstr "Статус успешно создан!"
+msgstr "Статус успешно создан"
 
 #: task_manager/statuses/views.py:45
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Status successfully updated"
-msgstr "Статус успешно создан!"
+msgstr "Статус успешно обновлён"
 
 #: task_manager/statuses/views.py:47
 msgid "Edit status"
 msgstr "Изменить статус"
 
 #: task_manager/statuses/views.py:59
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Status successfully deleted"
-msgstr "Статус успешно создан!"
+msgstr "Статус успешно удалён"
 
 #: task_manager/statuses/views.py:61
-#, fuzzy
-#| msgid "Delete user"
 msgid "Delete status"
 msgstr "Удалить статус"
 
 #: task_manager/statuses/views.py:64
-#, fuzzy
-#| msgid "Cannot delete user because it is in use"
 msgid "Cannot delete status because it is in use"
 msgstr "Нельзя удалить статус, так как он используется"
 
 #: task_manager/tasks/filters.py:12 task_manager/tasks/forms.py:14
 #: task_manager/tasks/templates/tasks/show_task.html:25
 #: task_manager/tasks/templates/tasks/tasks_list.html:23
-#, fuzzy
-#| msgid "Statuses"
 msgid "Status"
-msgstr "Статусы"
+msgstr "Статус"
 
 #: task_manager/tasks/filters.py:14 task_manager/tasks/forms.py:15
 #: task_manager/tasks/templates/tasks/show_task.html:21
@@ -175,20 +153,16 @@ msgid "Executor"
 msgstr "Исполнитель"
 
 #: task_manager/tasks/filters.py:15
-#, fuzzy
-#| msgid "Labels"
 msgid "Label"
-msgstr "Метки"
+msgstr "Метка"
 
 #: task_manager/tasks/filters.py:19
 msgid "Own tasks only"
 msgstr "Только свои задачи"
 
 #: task_manager/tasks/forms.py:13
-#, fuzzy
-#| msgid "Registration"
 msgid "Description"
-msgstr "Создание пользователя"
+msgstr "Описаниие"
 
 #: task_manager/tasks/templates/tasks/show_task.html:6
 msgid "Task view"
@@ -214,32 +188,22 @@ msgid "Show"
 msgstr "Показать"
 
 #: task_manager/tasks/views.py:45
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Task successfully created"
-msgstr "Задача успешно создан!"
+msgstr "Задача успешно создана"
 
 #: task_manager/tasks/views.py:65
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Task successfully updated"
-msgstr "Задача успешно создана!"
+msgstr "Задача успешно обновлена"
 
 #: task_manager/tasks/views.py:67
-#, fuzzy
-#| msgid "Edit"
 msgid "Edit task"
 msgstr "Редактировать задачу"
 
 #: task_manager/tasks/views.py:80
-#, fuzzy
-#| msgid "User successfully registered!"
 msgid "Task successfully deleted"
-msgstr "Задача успешно создана!"
+msgstr "Задача успешно удалена"
 
 #: task_manager/tasks/views.py:82
-#, fuzzy
-#| msgid "Delete user"
 msgid "Delete task"
 msgstr "Удалить задачу"
 
@@ -269,7 +233,8 @@ msgid "Sign up"
 msgstr "Регистрация"
 
 #: task_manager/templates/delete_confirmation_form.html:7
-msgid "A you sure you want to delete?"
+#: task_manager/users/templates/users/delete_user.html:7
+msgid "Are you sure you want to delete?"
 msgstr "Вы уверены, что хотите удалить?"
 
 #: task_manager/templates/delete_confirmation_form.html:10
@@ -300,10 +265,6 @@ msgstr "Подтверждение пароля"
 #: task_manager/users/templates/users/delete_user.html:6
 msgid "Delete user"
 msgstr "Удалить пользователя"
-
-#: task_manager/users/templates/users/delete_user.html:7
-msgid "Are you sure you want to delete?"
-msgstr "Вы уверены, что хотите удалить?"
 
 #: task_manager/users/templates/users/userlist.html:11
 msgid "Username"
