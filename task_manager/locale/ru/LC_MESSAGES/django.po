@@ -50,11 +50,11 @@ msgstr "Войти"
 
 #: task_manager/templates/base.html:54
 msgid "Sign up"
-msgstr "Зарегистрироваться"
+msgstr "Регистрация"
 
 #: task_manager/templates/delete_confirmation_form.html:7
-msgid "A you sure you want to delete"
-msgstr "Вы уверены в том, что хотите удалить?"
+msgid "A you sure you want to delete?"
+msgstr "Вы уверены, что хотите удалить?"
 
 #: task_manager/templates/delete_confirmation_form.html:10
 #: task_manager/users/templates/users/delete_user.html:10
@@ -63,11 +63,11 @@ msgstr "Да, удалить"
 
 #: task_manager/templates/index.html:11
 msgid "Greetings from Hexlet!"
-msgstr "Хекслет приветствует Вас!"
+msgstr "Привет от Хекслета!"
 
 #: task_manager/templates/index.html:12
 msgid "Practical programming courses"
-msgstr "Практические курсы программирования"
+msgstr "Практические курсы по программированию"
 
 #: task_manager/templates/index.html:14
 msgid "Learn more"
@@ -87,7 +87,7 @@ msgstr "Удалить пользователя"
 
 #: task_manager/users/templates/users/delete_user.html:7
 msgid "Are you sure you want to delete?"
-msgstr "Вы уверены в том, что хотите удалить?"
+msgstr "Вы уверены, что хотите удалить?"
 
 #: task_manager/users/templates/users/userlist.html:10
 msgid "ID"
@@ -123,11 +123,11 @@ msgstr "Создание пользователя"
 
 #: task_manager/users/views.py:36
 msgid "Register"
-msgstr "Регистрировать"
+msgstr "Создать"
 
 #: task_manager/users/views.py:46 task_manager/users/views.py:68
 msgid "You are not authorized! Please, log in."
-msgstr "Вы не авторизированы! Пожалуйста, залогиньтесь"
+msgstr "Вы не авторизированы! Пожалуйста, выполните вход"
 
 #: task_manager/users/views.py:53
 msgid "You profile been updated!"
