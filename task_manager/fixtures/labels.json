@@ -1,0 +1,35 @@
+[
+    {
+        "model": "labels.label", 
+        "pk": 1, 
+        "fields": {
+            "name": "first", 
+            "created_at": "2025-05-10T11:30:09.008Z"
+        }
+    }, 
+    {
+        "model": "labels.label", 
+        "pk": 2, 
+        "fields": {
+            "name": "that month", 
+            "created_at": "2025-05-10T11:31:21.863Z"
+        }
+    },
+    {
+        "model": "labels.label", 
+        "pk": 3, 
+        "fields": {
+            "name": "second", 
+            "created_at": "2025-05-10T11:32:28.936Z"
+        }
+    }, 
+    {
+        "model": "labels.label", 
+        "pk": 4, 
+        "fields": {
+            "name": "every day", 
+            "created_at": "2025-05-10T11:40:41.150Z"
+        }
+    },
+    {"model": "tasks.tasklabelrelationmodel", "pk": 1, "fields": {"task": 1, "label": 2}} 
+]
