@@ -23,3 +23,9 @@ class TaskFilter(FilterSet):
     class Meta:
         model = Task
         fields = ['status', 'executor', 'labels']
+
+    def author_of_tasks(self, queryset, name, value):
+        if value:
+            user = self.request.user
+            queryset = queryset.filter(author=user)
+        return queryset

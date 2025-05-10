@@ -46,7 +46,7 @@ class StatusesTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
         statuses = Status.objects.all()
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['statuses'],
             statuses,
             ordered=False

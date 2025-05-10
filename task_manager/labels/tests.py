@@ -47,7 +47,7 @@ class LabelTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
         labels = Label.objects.all()
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['labels'],
             labels,
             ordered=False

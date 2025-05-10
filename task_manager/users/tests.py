@@ -26,7 +26,7 @@ class UsersTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
 
         users = CustomUser.objects.all()
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['user_list'],
             users,
             ordered=False

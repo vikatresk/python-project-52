@@ -87,7 +87,7 @@ class TaskTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
         tasks = Task.objects.all()
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['taskslist'],
             tasks,
             ordered=False
@@ -161,7 +161,7 @@ class TaskTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
         tasks = Task.objects.filter(status=2).filter(executor=2)
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['taskslist'],
             tasks,
             ordered=False
@@ -175,7 +175,7 @@ class TaskTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
         tasks = Task.objects.filter(author=user.pk)
-        self.assertQuerysetEqual(
+        self.assertQuerySetEqual(
             response.context['taskslist'],
             tasks,
             ordered=False
