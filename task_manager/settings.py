@@ -159,7 +159,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 ROLLBAR = {
-    'access_token': os.getenv('ACCESS_TOKEN_ROLLBAR'),
+    'access_token': '9760cf56333c4780b571ed32e7d4374f',
     'environment': 'development' if DEBUG else 'production',
     'code_version': '1.0',
     'root': BASE_DIR,
