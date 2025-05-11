@@ -303,7 +303,7 @@ msgid "You have no permission to change other user"
 msgstr "У вас нет прав для изменения другого пользователя"
 
 #: task_manager/users/views.py:77
-msgid "User was deleted"
+msgid "User successfully  deleted"
 msgstr "Пользователен успешно удален"
 
 #: task_manager/users/views.py:82

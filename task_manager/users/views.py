@@ -74,7 +74,7 @@ class DeleteUser(CustomLoginRequiredMixin,
     template_name = 'users/delete_user.html'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy(USERS)
-    success_message = _('User was deleted')
+    success_message = _('User successfully deleted')
 
     my_perm_denied_url_string = USERS
     permission_denied_message = _("You have no permission to change other user")
