@@ -87,7 +87,7 @@ msgstr "Метка успешно изменена"
 
 #: task_manager/labels/views.py:50
 msgid "Edit label"
-msgstr "Изменить метку"
+msgstr "Изменение метки"
 
 #: task_manager/labels/views.py:51 task_manager/statuses/views.py:51
 #: task_manager/tasks/views.py:70 task_manager/users/views.py:59
@@ -162,7 +162,7 @@ msgstr "Только свои задачи"
 
 #: task_manager/tasks/forms.py:13
 msgid "Description"
-msgstr "Описаниие"
+msgstr "Описание"
 
 #: task_manager/tasks/templates/tasks/show_task.html:6
 msgid "Task view"
