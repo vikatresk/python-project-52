@@ -11,6 +11,9 @@ from .models import Label
 from task_manager.users.mixins import CustomLoginRequiredMixin
 
 
+LABELS='labels:labels'
+
+
 class ShowLabels(CustomLoginRequiredMixin, ListView):
 
     model = Label
@@ -26,7 +29,7 @@ class CreateLabel(CustomLoginRequiredMixin,
     model = Label
     template_name = 'form.html'
     form_class = LabelForm
-    success_url = reverse_lazy('labels:labels')
+    success_url = reverse_lazy(LABELS)
     success_message = _('Label successfully created')
     extra_context = {
         'title': _('Create label'),
@@ -41,7 +44,7 @@ class UpdateLabel(CustomLoginRequiredMixin,
     model = Label
     template_name = 'form.html'
     form_class = LabelForm
-    success_url = reverse_lazy('labels:labels')
+    success_url = reverse_lazy(LABELS)
     success_message = _('Label successfully updated')
     extra_context = {
         'title': _('Edit label'),
@@ -54,7 +57,7 @@ class DeleteLabel(CustomLoginRequiredMixin,
 
     model = Label
     template_name = 'delete_confirmation_form.html'
-    success_url = reverse_lazy('labels:labels')
+    success_url = reverse_lazy(LABELS)
     success_message = _('Label successfully deleted')
     extra_context = {
         'title': _('Delete label'),

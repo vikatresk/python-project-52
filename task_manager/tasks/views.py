@@ -15,6 +15,8 @@ from task_manager.users.mixins import (
 from task_manager.users.models import CustomUser
 
 
+TASKS='tasks:tasks'
+
 class TasksList(CustomLoginRequiredMixin, FilterView, ListView):
 
     model = Task
@@ -41,7 +43,7 @@ class CreateTask(CustomLoginRequiredMixin,
     model = Task
     template_name = 'form.html'
     form_class = TaskForm
-    success_url = reverse_lazy('tasks:tasks')
+    success_url = reverse_lazy(TASKS)
     success_message = _('Task successfully created')
     extra_context = {
         'title': _('Create task'),
@@ -61,7 +63,7 @@ class UpdateTask(CustomLoginRequiredMixin,
     model = Task
     template_name = 'form.html'
     form_class = TaskForm
-    success_url = reverse_lazy('tasks:tasks')
+    success_url = reverse_lazy(TASKS)
     success_message = _('Task successfully updated')
     extra_context = {
         'title': _('Edit task'),
@@ -76,12 +78,12 @@ class DeleteTask(CustomLoginRequiredMixin,
 
     model = Task
     template_name = 'delete_confirmation_form.html'
-    success_url = reverse_lazy('tasks:tasks')
+    success_url = reverse_lazy(TASKS)
     success_message = _('Task successfully deleted')
     extra_context = {
         'title': _('Delete task'),
     }
-    my_perm_denied_url_string = 'tasks:tasks'
+    my_perm_denied_url_string = TASKS
     permission_denied_message = _('Only author can delete task')
 
     # Check if user is author of task

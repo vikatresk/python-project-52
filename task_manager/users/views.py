@@ -15,6 +15,9 @@ from django.contrib import messages
 from django.db.models import ProtectedError
 
 
+USERS='users:users'
+
+
 class UsersList(ListView):
 
     model = CustomUser
@@ -49,14 +52,14 @@ class UpdateUser(CustomLoginRequiredMixin,
     template_name = 'users/form.html'
     form_class = UserUpdateForm
     pk_url_kwarg = 'pk'
-    success_url = reverse_lazy('users:users')
+    success_url = reverse_lazy(USERS)
     success_message = _('You profile been updated!')
     extra_context = {
         'title': _('User update'),
         'button_value': _('Update')
     }
 
-    my_perm_denied_url_string = 'users:users'
+    my_perm_denied_url_string = USERS
     permission_denied_message = _("You have no permission to change other user")
 
 
@@ -70,10 +73,10 @@ class DeleteUser(CustomLoginRequiredMixin,
     model = CustomUser
     template_name = 'users/delete_user.html'
     pk_url_kwarg = 'pk'
-    success_url = reverse_lazy('users:users')
+    success_url = reverse_lazy(USERS)
     success_message = _('User was deleted')
 
-    my_perm_denied_url_string = 'users:users'
+    my_perm_denied_url_string = USERS
     permission_denied_message = _("You have no permission to change other user")
 
     deletion_denied_message = _('Cannot delete user because it is in use')
