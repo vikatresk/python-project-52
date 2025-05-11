@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 14:58+0500\n"
+"POT-Creation-Date: 2025-05-11 18:08+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,8 +234,8 @@ msgstr "Регистрация"
 
 #: task_manager/templates/delete_confirmation_form.html:7
 #: task_manager/users/templates/users/delete_user.html:7
-msgid "Are you sure you want to delete?"
-msgstr "Вы уверены, что хотите удалить?"
+msgid "Are you sure you want to delete"
+msgstr "Вы уверены, что хотите удалить"
 
 #: task_manager/templates/delete_confirmation_form.html:10
 #: task_manager/users/templates/users/delete_user.html:10
@@ -303,7 +303,7 @@ msgid "You have no permission to change other user"
 msgstr "У вас нет прав для изменения другого пользователя"
 
 #: task_manager/users/views.py:77
-msgid "User successfully  deleted"
+msgid "User was deleted"
 msgstr "Пользователен успешно удален"
 
 #: task_manager/users/views.py:82
