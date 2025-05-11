@@ -74,14 +74,14 @@ class DeleteUser(CustomLoginRequiredMixin,
     template_name = 'users/delete_user.html'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy(USERS)
-    success_message = _('User successfully deleted')
+    success_message = _('User was deleted')
 
     my_perm_denied_url_string = USERS
     permission_denied_message = _("You have no permission to change other user")
 
     deletion_denied_message = _('Cannot delete user because it is in use')
 
-    # Impossible to delete user if user have linked task
+    # Impossible to delete user if user has linked task
     def form_valid(self, form):
         success_url = self.get_success_url()
         try:
