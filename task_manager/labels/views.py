@@ -11,7 +11,7 @@ from .models import Label
 from task_manager.users.mixins import CustomLoginRequiredMixin
 
 
-LABELS='labels:labels'
+LABELS = 'labels:labels'
 
 
 class ShowLabels(CustomLoginRequiredMixin, ListView):

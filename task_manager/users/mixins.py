@@ -44,7 +44,8 @@ class CustomUserPassesTestMixin(AccessMixin):
     permission_denied_message = ""
 
     def handle_no_permission(self):
-        messages.add_message(self.request, messages.ERROR, self.permission_denied_message)
+        messages.add_message(self.request, messages.ERROR,
+                              self.permission_denied_message)
         return redirect(reverse_lazy(self.my_perm_denied_url_string))
 
     # Default test

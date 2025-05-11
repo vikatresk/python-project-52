@@ -15,7 +15,7 @@ from django.contrib import messages
 from django.db.models import ProtectedError
 
 
-USERS='users:users'
+USERS = 'users:users'
 
 
 class UsersList(ListView):

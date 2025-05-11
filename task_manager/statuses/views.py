@@ -11,7 +11,7 @@ from .models import Status
 from task_manager.users.mixins import CustomLoginRequiredMixin
 
 
-STATUSES='statuses:statuses'
+STATUSES = 'statuses:statuses'
 
 
 class ShowStatuses(CustomLoginRequiredMixin, ListView):

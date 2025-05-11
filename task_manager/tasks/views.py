@@ -15,7 +15,8 @@ from task_manager.users.mixins import (
 from task_manager.users.models import CustomUser
 
 
-TASKS='tasks:tasks'
+TASKS = 'tasks:tasks'
+
 
 class TasksList(CustomLoginRequiredMixin, FilterView, ListView):
 
