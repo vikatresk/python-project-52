@@ -5,9 +5,7 @@
 
 [![Maintainability](https://qlty.sh/badges/643496c6-47fd-4b30-81da-dae82f5f4c6f/maintainability.svg)](https://qlty.sh/gh/vikatresk/projects/python-project-52)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vikatresk_python-project-52&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vikatresk_python-project-52)
-
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=vikatresk_python-project-52&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=vikatresk_python-project-52)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vikatresk_python-project-52&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vikatresk_python-project-52)
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=vikatresk_python-project-52&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=vikatresk_python-project-52)
 
